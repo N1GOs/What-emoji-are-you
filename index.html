@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Emoji Are You?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="quiz" class="screen active">
+            <div id="question-container"></div>
+            <div id="answer-buttons" class="btn-container"></div>
+        </div>
+        <div id="loading" class="screen hidden">
+            <h1>Calculating your result...</h1>
+            <div class="loading-bar">
+                <div class="loading-bar-fill"></div>
+            </div>
+        </div>
+        <div id="result" class="screen hidden">
+            <h1>Your Emoji</h1>
+            <div id="emoji"></div>
+            <button onclick="restartQuiz()">Try Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
