@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What Emoji Are You?</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Include CrazyGames SDK -->
+    <script src="https://sdk.crazygames.com/crazygames-sdk-v2.js"></script>
 </head>
 <body>
     <div class="container">
@@ -19,10 +21,11 @@
             </div>
         </div>
         <div id="result" class="screen hidden">
-            <h1>Your Emoji</h1>
+            <h1>You are:</h1>
             <div id="emoji"></div>
-            <button onclick="restartQuiz()">Try Again</button>
+            <button id="restart-button">Try Again</button>
         </div>
+        <div id="banner-container" style="width: 300px; height: 250px; margin: 20px auto;"></div>
     </div>
     <script src="script.js"></script>
 </body>
